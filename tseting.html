@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiên Hạo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="scene">
+
+    <!-- Cây trắng đen phía sau -->
+    <svg class="forest" viewBox="0 0 1440 900" preserveAspectRatio="none">
+      <g class="trees">
+        <path d="M80 900V480L20 600H60L10 700H60L0 810H50V900"/>
+        <path d="M210 900V380L140 520H180L120 640H175L110 770H165V900"/>
+        <path d="M350 900V470L290 590H330L270 700H325L260 820H315V900"/>
+        <path d="M500 900V320L430 470H480L410 600H465L395 750H455V900"/>
+        <path d="M670 900V430L615 550H650L590 660H640L580 790H630V900"/>
+        <path d="M840 900V350L770 500H825L755 630H815L745 770H800V900"/>
+        <path d="M1010 900V420L955 540H990L930 660H980L915 790H970V900"/>
+        <path d="M1160 900V300L1090 460H1140L1070 600H1130L1060 760H1115V900"/>
+        <path d="M1320 900V390L1260 520H1300L1240 650H1290L1225 790H1280V900"/>
+        <path d="M1430 900V460L1380 560H1415L1360 680H1405L1350 800H1395V900"/>
+      </g>
+
+      <path class="ground"
+            d="M0 870 Q250 830 500 875 T1000 865 T1440 870 V900 H0Z"/>
+    </svg>
+
+    <div class="content">
+
+      <div class="title"></div>
+
+      <div id="lyric">
+        Bấm PLAY để bắt đầu
+      </div>
+
+      <div id="nextLyric"></div>
+
+      <div class="controls">
+        <button id="playBtn">▶ PLAY</button>
+
+        <label class="upload">
+          🎵 CHỌN NHẠC
+          <input id="audioFile" type="file" accept="audio/*">
+        </label>
+      </div>
+
+      <div class="progress">
+        <div id="bar"></div>
+      </div>
+
+      <div id="time">00:00 / 00:00</div>
+
+      <audio id="audio"></audio>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
